@@ -12,16 +12,16 @@ if(isset($_POST['password']) && trim(htmlspecialchars($_POST['password'])) != ""
 
 if(isset($signInDetails['username']) && isset($signInDetails['password'])){
     if($signInDetails['username'] == 'azureuser' && $signInDetails['password'] == '$2a$07$7A0w1YreTefVmuUcjT0RgOn9PXIjjF90Qd1hTMj/DYK1jppaGCydO'){
-        $redirecturl = "Location: http://" . htmlspecialchars($_SERVER['HTTP_HOST']) . dirname(htmlspecialchars($_SERVER['PHP_SELF'])) . "/data.html";
+        $redirecturl = "Location: http://" . htmlspecialchars($_SERVER['HTTP_HOST']) . dirname(htmlspecialchars($_SERVER['PHP_SELF'])) . "data.html";
         header($redirecturl);
         exit;
     } else {
-        $homeURL = "Location: http://". htmlspecialchars($_SERVER['HTTP_HOST']) . dirname(htmlspecialchars($_SERVER['PHP_SELF'])) . "/index.html";
+        $homeURL = "Location: http://". htmlspecialchars($_SERVER['HTTP_HOST']) . dirname(htmlspecialchars($_SERVER['PHP_SELF'])) . "index.html";
         header($homeURL);
         exit;
     }
 } else {
-    $homeURL = "Location: http://". htmlspecialchars($_SERVER['HTTP_HOST']) . dirname(htmlspecialchars($_SERVER['PHP_SELF'])) . "/index.html";
+    $homeURL = "Location: http://". htmlspecialchars($_SERVER['HTTP_HOST']) . dirname(htmlspecialchars($_SERVER['PHP_SELF'])) . "index.html";
     header($homeURL);
     exit;
 }
