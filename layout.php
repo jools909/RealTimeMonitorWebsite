@@ -8,7 +8,7 @@
         <meta name="keywords" content=" " />
         <meta name="author" content=" " />
 
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
 
         <title>Real-Time Sensor Monitoring</title>
     </head>
