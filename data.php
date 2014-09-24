@@ -7,18 +7,7 @@
 			<div class="main-content">
 				
                 <p>Welcome to Data Page</p>
-				<!-- 
-						
-						MAIN CONTENT 
-						
-						page content goes here
-						page content goes here
-						page content goes here
-						page content goes here
-
-						area width of 960px
-
-				 -->
+                <?php include "dbConnect.php"; ?>
 
 					
 			</div><!-- end main-content -->
