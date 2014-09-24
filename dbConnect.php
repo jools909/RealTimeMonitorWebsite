@@ -5,11 +5,10 @@ if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT TOP 10 * FROM sensordata");
+$result = mysqli_query($con,"SELECT * FROM sensordata ORDER BY ReadingID DESC LIMIT 0,10");
 
 while($row = mysqli_fetch_array($result)) {
-  echo $row['FirstName'] . " " . $row['LastName'];
-  echo "<br>";
+  echo $row['ReadingID'], "," , $row['DateTime'], ",", $row['Sensor1'],";";
 }
 
 mysqli_close($con);

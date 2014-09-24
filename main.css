@@ -39,3 +39,16 @@
     -moz-border-radius: 2px;
     margin: 5px auto;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: grey;
+}
+
