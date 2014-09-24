@@ -8,7 +8,7 @@
         <meta name="keywords" content=" " />
         <meta name="author" content=" " />
 
-        <link rel="stylesheet" type="text/css" href='@Url.Content("~/main.css")'>
+        <link rel="stylesheet" type="text/css" href="~/main.css">
 
         <title>Real-Time Sensor Monitoring</title>
     </head>
