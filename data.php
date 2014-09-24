@@ -5,14 +5,18 @@
 	
 		<div class="main">
 			<div class="main-content">
-
-                <h2>Welcome to Data Page</h2>
+                
+                <div id="banner">
+                    <h2>Welcome to Data Page</h2>
+                </div>
                 <br><br>
                 <p id="results">Getting data...<br></p>
-
-                <canvas id="myChart0" width="600" height="300"></canvas>
-                <canvas id="myChart1" width="600" height="300"></canvas>
-                <canvas id="myChart2" width="600" height="300"></canvas>
+                
+                <div class="charts">
+                    <canvas id="myChart0" width="600" height="300"></canvas>
+                    <canvas id="myChart1" width="600" height="300"></canvas>
+                    <canvas id="myChart2" width="600" height="300"></canvas>
+                </div>
 
                 <script type="text/javascript">
                     if (window.XMLHttpRequest) {
@@ -32,7 +36,7 @@
                                 final2DArray[i] = resultsArray[i].split(",");
                             } //10x11 2D Array now made
 
-                            var printHeader = "<table class='dataTable' style='width: 100%;'>" +
+                            var printHeader = "<table id='dataTable;'>" +
                                 "<tr><th>ReadingID</th><th>DateTime</th>" +
                                 "<th>Gyro x</th><th>Gyro y</th><th>Gyro z</th>" +
                                 "<th>Accel x</th><th>Accel y</th><th>Accel z</th>" +
