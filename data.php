@@ -89,14 +89,18 @@
 										]
 									};
 								}
+								var chartOptions = {
+									animation : false,
+								}
+								
 								var ctx0 = document.getElementById("myChart0").getContext("2d");
-								var myCharts0 = new Chart(ctx0).Line(sensorData[0]);
+								var myCharts0 = new Chart(ctx0).Line(sensorData[0], chartOptions);
 								
 								var ctx1 = document.getElementById("myChart1").getContext("2d");
-								var myCharts1 = new Chart(ctx1).Line(sensorData[1]);
+								var myCharts1 = new Chart(ctx1).Line(sensorData[1], chartOptions);
 								
 								var ctx2 = document.getElementById("myChart2").getContext("2d");
-								var myCharts2 = new Chart(ctx2).Line(sensorData[2]);
+								var myCharts2 = new Chart(ctx2).Line(sensorData[2], chartOptions);
 							}
 						};
 						xmlhttp.open("GET","dbConnect.php",true);
