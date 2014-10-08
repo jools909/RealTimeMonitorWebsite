@@ -11,6 +11,7 @@
                     <h2>Welcome to Data Page</h2>
                 </div>
                 <br><br>
+				<p id="refreshCounter">0</p><br>
                 <p id="results">Getting data...<br></p>
                 
                 <div class="charts">
@@ -20,6 +21,7 @@
                 </div>
 
                 <script type="text/javascript">
+					var refreshCounter = 0;
                     var auto_refresh = setInterval(
 					function (){
 						if (window.XMLHttpRequest) {
@@ -104,7 +106,10 @@
 							}
 						};
 						xmlhttp.open("GET","dbConnect.php",true);
-						xmlhttp.send();				
+						xmlhttp.send();
+						
+						refreshCounter += 1;
+						document.getElementById("refreshCounter").innerHTML = refreshCounter;
 					}, 1000);
 
                     function graphData(arrayInput, j){
