@@ -105,7 +105,7 @@
 								var myCharts2 = new Chart(ctx2).Line(sensorData[2], chartOptions);
 							}
 						};
-						xmlhttp.open("GET","dbConnect.php",true);
+						xmlhttp.open("POST","dbConnect.php",true);
 						xmlhttp.send();
 						
 						refreshCounter += 1;
